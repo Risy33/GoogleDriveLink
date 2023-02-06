@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google Direct Link Generator</title>
     <script
       src="https://kit.fontawesome.com/1935d064dd.js"
       crossorigin="anonymous"
@@ -11,7 +11,54 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <main>
+      <section class="main-container">
+        <div class="instructions">
+          <div class="container">
+            <h2 class="line">Instructions</h2>
+            <p>Follow the instructions below to get your Google Drive file link</p>
+            <hr>
+            <ol types="1">
+              <li>
+                <p>Open <a href="https://drive.google.com">Google Drive</a> </p>
+              </li>
+              <li>
+                <p>Right click on a file.</p>
+              </li>
+              <li>
+                <p>Select "Get Link" and click "Copy Link"</p>
+              </li>
+              <li>
+                <p>Paste the link here and click "Generate Direct Link" button</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- Download Section -->
+        <div class="download-link">
+          <div class="container">
+            <h1>Google Direct Download Link Generator</h1>
+            <input type="radio" id="login" name="tab" checked>
+            <input type="radio" id="register" name="tab" >
+            <input type="radio" id="reset" name="tab" >
+            <nav>
+              <label for="login" class="login">
+                <i class="fas fa-sign-in-alt"></i>
+                Paste Link
+              </label>
+              <label for="login" class="register">
+                <i class="fas fa-headphones-alt"></i>
+                Embed Audio
+              </label>
+              <label for="login" class="reset">
+                <i class="fas fa-photo-video"></i>
+                Embed Video/Docs
+              </label>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
