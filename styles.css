@@ -217,18 +217,18 @@ section .content {
   background-color: rgba(0, 0, 0, 0.1);
   outline: none;
   color: var(--dark-grey);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .content form label input:focus:invalid {
   font-size: 1.6rem;
   border-bottom: 2px solid var(--color-sec);
-} 
+}
 
 .content form label input:focus:valid {
   font-size: 1.6rem;
   border-bottom: 2px solid green;
-  background-color: #E8F0FE;
+  background-color: #e8f0fe;
 }
 
 .content form i {
@@ -250,11 +250,11 @@ section .content {
   font-weight: 700;
   background-color: var(--color-sec);
   outline: none;
-  border:none;
+  border: none;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .content .btn:hover {
@@ -285,9 +285,8 @@ section .content {
   pad: 5px 8px;
   border: 1px solid #eee;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 
 .embed-code span:hover {
   font-size: 1.8rem;
