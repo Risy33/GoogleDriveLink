@@ -99,9 +99,7 @@ main h1 {
   color: var(--color-primary);
 }
 
-main input[type='radio'] {
-  /* display: none; */
-}
+
 
 main nav {
   display: flex;
