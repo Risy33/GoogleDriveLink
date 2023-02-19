@@ -56,7 +56,7 @@ function generateLink(e) {
     const getVideoLink = glink.value.replace('/view?usp=share_link', '');
 
     const video1 = '<iframe src="';
-    const video2 = '/preview"width="560" height="315> </iframe>"';
+    const video2 = '/preview"width="560" height="315"> </iframe>';
 
     const embedVideo = <HTMLInputElement>document.getElementById('embed-video');
     embedVideo.value = `${video1}${getVideoLink}${video2}`;
