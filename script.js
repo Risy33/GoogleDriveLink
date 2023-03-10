@@ -31,8 +31,7 @@ function generateLink(e) {
         const audio1 = '<audio width="300" height="32" controls="controls" src="';
         const audio2 = '" type="audio/mp3"></audio>';
         const embedAudio = document.getElementById('embed-audio');
-        embedAudio.value = `${audio1}${downloadLink.value}${audio2}`;
-        // console.log(embedAudio.value)
+        embedAudio.value = `${audio1}${downloadLink.value}${audio2}`; //text inside the text-area
         //COPY AUDIO EMBED CODE
         const copyAudio = document.querySelector('.copy-audio');
         copyAudio.addEventListener('click', () => {

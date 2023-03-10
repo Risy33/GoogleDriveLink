@@ -24,7 +24,7 @@ function generateLink(e) {
 
     downloadLink.value = getDownloadLink;
 
-    function copyText(target) {
+    function copyText(target: HTMLInputElement) {
       if (target.value === '') {
         alert('Please generate a download link');
       } else {
@@ -43,9 +43,8 @@ function generateLink(e) {
     const audio1 = '<audio width="300" height="32" controls="controls" src="';
     const audio2 = '" type="audio/mp3"></audio>';
     const embedAudio = <HTMLInputElement>document.getElementById('embed-audio');
-    embedAudio.value = `${audio1}${downloadLink.value}${audio2}`;
-    // console.log(embedAudio.value)
-
+    embedAudio.value = `${audio1}${downloadLink.value}${audio2}`; //text inside the text-area
+   
     //COPY AUDIO EMBED CODE
     const copyAudio = <HTMLInputElement>document.querySelector('.copy-audio');
     copyAudio.addEventListener('click', () => {
